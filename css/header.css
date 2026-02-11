@@ -1,0 +1,54 @@
+header{
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+header img{
+    width: 50px;
+}
+
+header .logo{
+    display: flex;
+    gap: 5px;
+    padding-left: 4%;
+    width: 40%;
+    align-items: center;
+
+}
+
+header .nav{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 62%;
+    padding-right: 2%;
+}
+header .logo div .texto-logo{
+    display: flex;
+    width: 200px;
+
+}
+header .logo a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 0;
+
+}
+header .logo a .naranja-texto{
+    color: #d7611c;
+}
+
+header .nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}

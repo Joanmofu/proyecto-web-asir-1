@@ -1,0 +1,71 @@
+/* *{
+    border: 1px solid red;
+} */
+
+
+
+.bloque-principal{
+ margin: 10px;
+}
+.bloque-principal .bloque-inicio{
+
+    height: 400px;
+    background-image: url("../recurses/Imagenes/Carroussel/Carroussel-1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.bloque-principal .bloque-inicio h1{
+    color: white;
+    font-size: 70px;
+}
+
+.bloque-principal .bloque-secundario{
+    display: flex;
+
+}
+
+.bloque-principal .bloque-secundario .bloque{ 
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    gap: 30px;
+
+
+}
+.bloque-principal .bloque-secundario p{ 
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+
+}
+.bloque-principal .bloque-secundario button{ 
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.bloque-principal .bloque-secundario .imagen{
+
+width: 20%;
+padding: 10px;
+    
+}
+.bloque-principal .bloque-secundario img{
+
+width: 100%;
+    
+}
