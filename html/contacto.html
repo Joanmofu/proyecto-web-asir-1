@@ -12,7 +12,8 @@
 </head>
 
 <body>
-     <header class="header-principal">
+    <!-- navegacion -->
+    <header class="cabecera-principal">
         <div class="logo">
             <div>
                 <img src="../recurses/Imagenes/Logos/Logo.png" alt="50px">
@@ -25,7 +26,7 @@
             </div>
 
         </div>
-        <div class="nav">
+        <div class="navegacion">
             <div class="inicio">
                 <a href="../index.html">
                     <p>Inicio</p>
@@ -46,7 +47,7 @@
                     <p>Tienda</p>
                 </a>
             </div>
-            <div class="contacto">
+            <div class="contacto activo">
                 <a href="contacto.html">
                     <p>Contacto</p>
                 </a>
@@ -54,6 +55,8 @@
         </div>
 
     </header>
+
+    <!-- Contenido Principal -->
 
     <div class="linea"></div>
     <h1 class="titulo">Contacto</h1>
@@ -72,29 +75,51 @@
             <p><strong>Redes Sociales:</strong></p>
             <div class="redes-sociales">
                 <div class="logos-redes">
-                    <img src="../recurses/Imagenes/RedesSociales/telegram-icon.png" alt="">
-                    <img class="whatsapp-logo" src="../recurses/Imagenes/RedesSociales/whatsapp-logo.png" alt="">
-                    <img class="twitter-icon" src="../recurses/Imagenes/RedesSociales/twitter-icon.png" alt="">
-                    <img class="instagram-logo" src="../recurses/Imagenes/RedesSociales/instagram-logo.png" alt="">
-                    <img class="facebook-icon" src="../recurses/Imagenes/RedesSociales/facebook-icon.png" alt="">
+                    <a href="https://t.me/tu_usuario" target="_blank">
+                        <img  class="telegram-logo"  src="../recurses/Imagenes/RedesSociales/telegram-icon.png" alt="Telegram">
+                    </a>
+
+                    <a href="https://wa.me/34XXXXXXXXX" target="_blank">
+                        <img class="whatsapp-logo" src="../recurses/Imagenes/RedesSociales/whatsapp-logo.png"
+                            alt="WhatsApp">
+                    </a>
+
+                    <a href="https://twitter.com/tu_perfil" target="_blank">
+                        <img class="twitter-icon" src="../recurses/Imagenes/RedesSociales/twitter-icon.png"
+                            alt="Twitter">
+                    </a>
+
+                    <a href="https://instagram.com/tu_perfil" target="_blank">
+                        <img class="instagram-logo" src="../recurses/Imagenes/RedesSociales/instagram-logo.png"
+                            alt="Instagram">
+                    </a>
+
+                    <a href="https://facebook.com/tu_pagina" target="_blank">
+                        <img class="facebook-icon" src="../recurses/Imagenes/RedesSociales/facebook-icon.png"
+                            alt="Facebook">
+                    </a>
                 </div>
                 <div class="logo">
                     <img src="../recurses/Imagenes/Logos/Logo.png" alt="">
                 </div>
             </div>
         </div>
+
+        <!-- formulario  -->
+
         <div class="formulario">
             <form action="">
-                <input type="text" placeholder="NOMBRE">
-                <input type="email" placeholder="CORREO (CORREO@EMAIL.COM)">
-                <input type="tel" placeholder="TELÉFONO (+34 XXX XXX XXX)">
+                <input type="text" placeholder="NOMBRE" required minlength="3">
+                <input type="email" placeholder="CORREO (CORREO@EMAIL.COM)" required>
+                <input type="tel" placeholder="TELÉFONO (+34 XXX XXX XXX)" required
+                    pattern="^\+34\s[0-9]{3}\s[0-9]{3}\s[0-9]{3}$">
 
                 <select>
                     <option value="" disabled selected>TEMA</option>
                     <option value="consulta">Consulta</option>
                 </select>
 
-                <textarea placeholder="MENSAJE"></textarea>
+                <textarea placeholder="MENSAJE" required></textarea>
 
                 <div class="condiciones">
                     <input type="checkbox" id="acepto">

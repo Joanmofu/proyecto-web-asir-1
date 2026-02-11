@@ -69,3 +69,22 @@ padding: 10px;
 width: 100%;
     
 }
+
+button, a {
+    transition: all 0.3s ease;
+}
+button:active {
+    transform: translateY(2px);
+}
+
+
+.bloque-secundario .imagen img {
+    filter: grayscale(30%);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.bloque-secundario .imagen:hover img {
+    transform: scale(1.1) rotate(2deg); 
+    filter: grayscale(0%);
+    cursor: pointer;
+}

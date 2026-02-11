@@ -57,6 +57,18 @@
 .redes-sociales .logo img{
     width: 140px;
 }
+.redes-sociales .logos-redes:hover {
+    cursor: pointer;
+}
+.logos-redes a:hover img {
+    transform: scale(1.2);
+    filter: brightness(1.2); 
+    transition: all 0.3s ease;
+}
+
+.logos-redes .telegram-logo{
+    padding-left: 75px;
+}
 
 .logos-redes .instagram-logo{
     position: absolute;
@@ -152,3 +164,51 @@
 .formulario button:hover {
     background-color: #444;
 }
+
+
+
+
+/* validaciones formulario  */
+
+
+
+
+.formulario input:not(:placeholder-shown):invalid,
+.formulario textarea:not(:placeholder-shown):invalid {
+    border: 2px solid #ff4d4d; 
+    background-color: #fff5f5;
+}
+
+
+.formulario input:not(:placeholder-shown):valid,
+.formulario textarea:not(:placeholder-shown):valid {
+    border: 2px solid #2ecc71; 
+    background-color: #f5fff8;
+}
+
+
+.formulario input:focus, 
+.formulario textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #d7611c; 
+}
+
+.formulario input, 
+.formulario textarea {
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+.formulario button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+.formulario button:hover {
+    background-color: #d7611c; 
+    transform: translateY(-2px);
+}
+
+
+

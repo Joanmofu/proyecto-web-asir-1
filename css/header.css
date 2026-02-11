@@ -19,7 +19,7 @@ header .logo{
 
 }
 
-header .nav{
+header .navegacion{
     display: flex;
     justify-content: space-between;
     
@@ -45,10 +45,18 @@ header .logo a .naranja-texto{
     color: #d7611c;
 }
 
-header .nav a{
+header .navegacion a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+}
+.navegacion a:hover {
+    color: #d7611c; 
+    text-decoration: underline;
+}
+.navegacion .activo p {
+    border-bottom: 3px solid #d7611c;
+    color: #d7611c;
 }

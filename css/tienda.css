@@ -22,6 +22,10 @@
     gap: 15px;
     align-items: center;
 }
+.articulo:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
 .articulo h3{
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -69,4 +73,15 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+.articulo button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.articulo:hover button {
+    opacity: 1;
+    transform: translateY(0);
 }
