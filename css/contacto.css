@@ -1,3 +1,6 @@
+/* 
+   1. TÍTULO Y ESTRUCTURA PRINCIPAL
+*/
 .titulo {
     text-align: center;
     font-style: italic;
@@ -7,101 +10,122 @@
     text-transform: uppercase;
     font-size: 70px;
 }
-.bloque-principal{
-    display: flex;
 
+.bloque-principal {
+    display: flex;
 }
-.bloque-principal .contacto{
+
+.bloque-principal .contacto {
     width: 48%;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 25px;
 }
-.bloque-principal .formulario{
+
+.bloque-principal .formulario {
     width: 48%;
 }
-.bloque-principal .contacto h1 {
 
+.bloque-principal .contacto h1 {
     color: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
     font-weight: 550;
     text-transform: uppercase;
     font-size: 55px;
 }
-.bloque-principal .contacto p {
 
+.bloque-principal .contacto p {
     color: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     text-align: justify;
-
 }
 
-.redes-sociales{
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* 
+   2. REDES SOCIALES (ESTRUCTURA DE ARCO)
+*/
+.redes-sociales {
+    width: 350px; 
+    height: 180px; 
     position: relative;
-    
-}
-.redes-sociales .logos-redes{
+    margin: 20px 0; 
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: flex-end; 
 }
 
-.logos-redes img{
-    width: 40px;
+.redes-sociales .logo {
+    z-index: 2; 
 }
-.redes-sociales .logo img{
+
+.redes-sociales .logo img {
     width: 140px;
 }
-.redes-sociales .logos-redes:hover {
-    cursor: pointer;
+
+.logos-redes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.logos-redes a:hover img {
-    transform: scale(1.2);
-    filter: brightness(1.2); 
+
+.logos-redes a {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+
+    transform: translate(-50%, -50%); 
     transition: all 0.3s ease;
 }
 
-.logos-redes .telegram-logo{
-    padding-left: 75px;
+.logos-redes a:hover {
+    transform: translate(-50%, -50%) scale(1.2); 
+    filter: brightness(1.2); 
+    cursor: pointer;
 }
 
-.logos-redes .instagram-logo{
-    position: absolute;
-
-    top: 25%;
-    right: 30%;
-}
-.logos-redes .whatsapp-logo{
-    position: absolute;
-
-    top: 25%;
-    left: 35%;
-}
-.logos-redes .facebook-icon{
-    position: absolute;
-
-    bottom: 25%;
-    right: 20%;
-}
-.logos-redes .twitter-icon{
-    position: absolute;
-
-    bottom: 25%;
-    left: 25%;
+.logos-redes a img {
+    width: 100%;
+    height: auto;
 }
 
+
+.logos-redes .pos-telegram {
+    top: 85%;
+    left: 5%;
+}
+
+.logos-redes .pos-whatsapp {
+    top: 45%;
+    left: 20%;
+}
+
+.logos-redes .pos-twitter {
+    top: 15%;
+    left: 50%;
+}
+
+.logos-redes .pos-instagram {
+    top: 45%;
+    left: 80%;
+}
+
+.logos-redes .pos-facebook {
+    top: 85%;
+    left: 95%;
+}
+
+/*
+   3. ESTILOS DEL FORMULARIO
+ */
 .formulario form {
     display: flex;
     flex-direction: column;
     gap: 15px; 
     width: 100%;
 }
-
 
 .formulario input[type="text"],
 .formulario input[type="email"],
@@ -117,9 +141,8 @@
     text-transform: uppercase; 
     outline: none;
     box-sizing: border-box; 
-    
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
-
 
 .formulario input::placeholder,
 .formulario textarea::placeholder {
@@ -146,7 +169,6 @@
     margin-top: 10px;
 }
 
-
 .formulario button {
     background-color: #212121; 
     color: #fff;
@@ -158,27 +180,27 @@
     font-size: 14px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .formulario button:hover {
-    background-color: #444;
+    background-color: #d7611c; 
+    transform: translateY(-2px);
 }
 
+.formulario button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
 
-
-
-/* validaciones formulario  */
-
-
-
-
+/* 
+   4. VALIDACIONES VISUALES DEL FORMULARIO
+*/
 .formulario input:not(:placeholder-shown):invalid,
 .formulario textarea:not(:placeholder-shown):invalid {
     border: 2px solid #ff4d4d; 
     background-color: #fff5f5;
 }
-
 
 .formulario input:not(:placeholder-shown):valid,
 .formulario textarea:not(:placeholder-shown):valid {
@@ -186,29 +208,8 @@
     background-color: #f5fff8;
 }
 
-
 .formulario input:focus, 
 .formulario textarea:focus {
     outline: none;
     box-shadow: 0 0 5px #d7611c; 
 }
-
-.formulario input, 
-.formulario textarea {
-    transition: border-color 0.3s ease, background-color 0.3s ease;
-}
-
-
-.formulario button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-
-.formulario button:hover {
-    background-color: #d7611c; 
-    transform: translateY(-2px);
-}
-
-
-
