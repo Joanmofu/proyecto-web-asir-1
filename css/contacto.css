@@ -211,4 +211,44 @@
 }
 
 
+@media (max-width: 768px) {
+    .bloque-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bloque-principal .contacto, 
+    .bloque-principal .formulario {
+        width: 90%;
+        padding: 10px;
+    }
+    .titulo {
+        font-size: 40px;
+    }
+    .redes-sociales {
+        width: 100%;
+    }
 
+    .logos-redes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .logos-redes .telegram-logo,
+    .logos-redes .instagram-logo,
+    .logos-redes .whatsapp-logo,
+    .logos-redes .facebook-icon,
+    .logos-redes .twitter-icon {
+        position: static; 
+        padding-left: 0;
+    }
+    .redes-sociales .logo {
+        display: none;
+    }
+    .bloque-principal .contacto h1 {
+
+    
+    font-size: 35px;
+}
+}

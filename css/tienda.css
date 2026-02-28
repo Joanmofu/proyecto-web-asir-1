@@ -85,3 +85,21 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+    .lista-articulo {
+        flex-wrap: wrap;
+    }
+    .articulo {
+        width: 45%; 
+        margin-bottom: 30px;
+    }
+    .titulo {
+        font-size: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .articulo {
+        width: 90%; 
+    }
+}

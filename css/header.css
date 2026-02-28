@@ -66,30 +66,28 @@ header .navegacion a {
     color: #d7611c;
 }
 
-@media (max-width: 600px) {
-    header .logo a {
-        display: none;
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 10px;
     }
-
-    header .navegacion a {
-        font-size: 10px;
-    }
-
-    header .navegacion {
-        display: flex;
-        justify-content: space-between;
-        width: 78%;
-        padding-right: 2%;
-
-    }
-
-
     header .logo {
-        display: flex;
-        gap: 2px;
-        padding-left: 4%;
-        width: 10%;
-        align-items: center;
-
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+    }
+    header .logo a {
+        display: block; 
+    }
+    header .navegacion {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        padding-right: 0;
+        flex-wrap: wrap;
+    }
+    header .navegacion a {
+        font-size: 13px;
     }
 }

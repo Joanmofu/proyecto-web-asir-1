@@ -77,33 +77,26 @@ footer .lista a:hover {
     color: #ffffff;
 }
 
-@media (max-width: 600px) {
-    .social-icons {
-        display: flex;
-        gap: 15px;
-        padding: 0 20px;
+@media (max-width: 768px) {
+    footer {
         flex-wrap: wrap;
+        padding: 20px 0;
+    }
+    footer .pie, footer .pie-redes {
+        width: 50%; /* Pasan a ocupar la mitad en tablets (2x2) */
+        margin-bottom: 20px;
+    }
+    .social-icons {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 480px) {
+    footer .pie, footer .pie-redes {
+        width: 100%; /* Una sola columna en teléfonos */
+        align-items: center;
+        text-align: center;
+    }
+    .social-icons {
         justify-content: center;
     }
-
-    .social-btn {
-        width: 25px;
-        height: 25px;
-        font-size: 12px;
-        transition: background-color 0.3s ease;
-    }
-    footer .pie .lista a {
-
-    font-size: 10px;
-}
-    footer .pie-redes .lista a {
-
-    font-size: 10px;
-}
-footer .pie .titulo-pie {
- font-size: 12px;
-}
-footer .pie-redes .titulo-pie {
- font-size: 12px;
-}
 }

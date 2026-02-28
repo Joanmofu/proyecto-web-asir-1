@@ -79,12 +79,24 @@
 
 }
 
-@media (min-width: 700px) {
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
+@media (max-width: 768px) {
+    .curso {
+        flex-direction: column;
+        align-items: center;
+    }
+    .curso.diseño {
+        flex-direction: column; /* Evita el row-reverse en móvil */
+    }
+    .curso .img {
+        width: 90%;
+        height: 250px; /* Le damos altura explícita para que se vea el background-image */
+        margin: 10px;
+    }
+    .curso .texto {
+        width: 90%;
+        margin: 10px;
+    }
+    .titulo {
+        font-size: 40px;
+    }
 }

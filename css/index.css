@@ -91,31 +91,19 @@ button:active {
 }
 
 
-@media (max-width: 600px) {
-
+@media (max-width: 768px) {
     .bloque-principal .bloque-secundario {
         flex-direction: column; 
-        gap: 20px;
+        align-items: center;
+        gap: 30px;
     }
-
-
     .bloque-principal .bloque-secundario .bloque {
-        width: 100%;
+        width: 90%;
+        text-align: center;
     }
-
-
-    .bloque-principal .bloque-secundario .imagenes {
-        display: flex;
-        flex-direction: row; 
-        justify-content: center;
-        width: 100%;
-    }
-
     .bloque-principal .bloque-secundario .imagen {
-        width: 93%; 
+        width: 80%; 
     }
-
-
     .bloque-principal .bloque-inicio h1 {
         font-size: 40px; 
         text-align: center;
