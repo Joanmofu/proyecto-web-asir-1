@@ -2,69 +2,108 @@ footer {
     display: flex;
     flex-direction: row;
     background-color: #282828;
-     
+
 }
-footer .pie{
+
+footer .pie {
     display: flex;
     flex-direction: column;
     width: 25%;
 }
-footer .pie .titulo-pie{
-    color:  white;
+
+footer .pie .titulo-pie {
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     border-bottom: 2px solid #d7611c;
     margin: 20px;
     padding-bottom: 10px;
 }
-footer .pie .lista{
+
+footer .pie .lista {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
 }
-footer .pie .lista a{
+
+footer .pie .lista a {
     color: white;
     text-decoration: none;
     padding: 5px;
 }
 
-footer .pie-redes{
+footer .pie-redes {
     display: flex;
     flex-direction: column;
     width: 25%;
 }
-footer .pie-redes .titulo-pie{
-    color:  white;
+
+footer .pie-redes .titulo-pie {
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     border-bottom: 2px solid #d7611c;
     margin: 20px;
     padding-bottom: 10px;
 }
+
 .social-icons {
-  display: flex;
-  gap: 15px;
-  padding: 0 20px;
+    display: flex;
+    gap: 15px;
+    padding: 0 20px;
 }
+
 .social-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  background-color: #4c4e53;
-  color: #ffffff; 
-  border-radius: 50%; 
-  text-decoration: none;
-  font-size: 18px; 
-  transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #4c4e53;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
-footer .lista a:hover{
+
+footer .lista a:hover {
 
     color: #6a6c71;
 }
 
 .social-btn:hover {
-  background-color: #6a6c71; 
-  color: #ffffff;
+    background-color: #6a6c71;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-btn {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+        transition: background-color 0.3s ease;
+    }
+    footer .pie .lista a {
+
+    font-size: 10px;
+}
+    footer .pie-redes .lista a {
+
+    font-size: 10px;
+}
+footer .pie .titulo-pie {
+ font-size: 12px;
+}
+footer .pie-redes .titulo-pie {
+ font-size: 12px;
+}
 }

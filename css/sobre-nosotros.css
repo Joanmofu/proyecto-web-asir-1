@@ -38,5 +38,18 @@
  .logo a .naranja-texto{
     color: #d7611c;
 }
+@media (max-width: 600px) {
+    .bloque{
+    flex-direction: column;
+
+}
+.bloque .imagen{
+    width: 90%;
+}
+.titulo{
+        font-size: 50px;
+}
+
+}
 
 
