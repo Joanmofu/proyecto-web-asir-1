@@ -51,5 +51,6 @@ Como desarrolladores, hemos priorizado los siguientes aspectos técnicos para da
 * **Interactividad y Efectos**: Se han implementado efectos de **hover** (al pasar el ratón) en botones, enlaces y tarjetas de productos, así como transiciones suaves para mejorar la experiencia del usuario.
 * **Formulario de Contacto**: Incluye validación de datos en tiempo real mediante CSS. Los campos cambian de color (verde/rojo) según si la información introducida es válida o no, asegurando que el cliente reciba mensajes correctamente formateados.
 * **Fidelidad al Diseño**: Se ha respetado rigurosamente la disposición de elementos, tipografía y colores proporcionados en los mockups originales.
+* **Diseño responsable**: Uso de medias para que se pueda ver bien en cualquier dispositivo. 
 
 ---
