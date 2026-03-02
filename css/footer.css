@@ -83,7 +83,7 @@ footer .lista a:hover {
         padding: 20px 0;
     }
     footer .pie, footer .pie-redes {
-        width: 50%; /* Pasan a ocupar la mitad en tablets (2x2) */
+        width: 50%; 
         margin-bottom: 20px;
     }
     .social-icons {
@@ -92,7 +92,7 @@ footer .lista a:hover {
 }
 @media (max-width: 480px) {
     footer .pie, footer .pie-redes {
-        width: 100%; /* Una sola columna en teléfonos */
+        width: 100%; 
         align-items: center;
         text-align: center;
     }
